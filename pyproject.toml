@@ -1,0 +1,23 @@
+[project]
+name = "unitree-mujoco"
+version = "0.1.0"
+description = "Unitree Mujoco Interface"
+readme = "readme.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+authors = [
+  { name = "UnitreeRobotics", email = "unitree@unitree.com" }
+]
+dependencies = [
+  "unitree_sdk2py",
+  "mujoco",
+  "pygame",
+]
+
+[tool.uv.sources]
+unitree-sdk2py = { workspace = true }
+
+[tool.uv.workspace]
+members = [
+    "ext/unitree_sdk2_python",
+]
