@@ -308,3 +308,18 @@ source ~/unitree_ros2/setup.sh # Use the network card connected to the robot
 export ROS_DOMAIN_ID=0 # Use the default domain id
 ./install/stand_go2/bin/stand_go2 # Run
 ```
+
+# Additional Notes
+
+## Setup with uv
+
+```shell
+git submodule update --init --recursive
+uv sync
+```
+
+## Run with uv
+
+```shell
+uv run simulate_python/unitree_mujoco.py
+```
